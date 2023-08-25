@@ -1,0 +1,25 @@
+{
+  "name": "@kikiutils/tsconfigs",
+  "version": "0.0.1",
+  "description": "Commonly used tsconfigs.",
+  "license": "MIT",
+  "author": {
+    "name": "kiki-kanri"
+  },
+  "homepage": "https://github.com/kiki-kanri/kikiutils-node-tsconfigs#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiki-kanri/kikiutils-node-tsconfigs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kiki-kanri/kikiutils-node-tsconfigs/issues"
+  },
+  "files": [
+    "./cjs/**/*",
+    "./esm/**/*",
+    "./tsconfig.base.json"
+  ],
+  "keywords": [
+    "tsconfig"
+  ]
+}

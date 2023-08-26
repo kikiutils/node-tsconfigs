@@ -5,7 +5,7 @@ Commonly used tsconfig configuration files.
 **Detailed documentation will be added in future releases.**
 
 Currently available are:
-- @kikiutils/tsconfigs/cjs/node16.json
-- @kikiutils/tsconfigs/cjs/nodenext.json
-- @kikiutils/tsconfigs/esm/node16.json
-- @kikiutils/tsconfigs/esm/nodenext.json
+- @kikiutils/tsconfigs/cjs/es2020.json
+- @kikiutils/tsconfigs/cjs/esnext.json
+- @kikiutils/tsconfigs/esm/es2020.json
+- @kikiutils/tsconfigs/esm/esnext.json

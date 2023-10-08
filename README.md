@@ -2,16 +2,33 @@
 
 Commonly used tsconfig configuration files.
 
+You can extend the @kikiutils/tsconfigs/module/target setting in tsconfig.json.
+
 **Detailed documentation will be added in future releases.**
 
-Currently available are:
+Example:
+```json
+{
+  "extends": "@kikiutils/tsconfigs/esnext/esnext.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+```
 
-### CJS
-  - @kikiutils/tsconfigs/cjs/es2020.json
-  - @kikiutils/tsconfigs/cjs/es2021.json
-  - @kikiutils/tsconfigs/cjs/esnext.json
+Available module options:
+- cjs
+- es6
+- es2020
+- es2022
+- esnext
 
-### ESM
-  - @kikiutils/tsconfigs/esm/es2020.json
-  - @kikiutils/tsconfigs/esm/es2021.json
-  - @kikiutils/tsconfigs/esm/esnext.json
+Available target options:
+- es2020
+- es2021
+- es2022
+- es2023
+- esnext

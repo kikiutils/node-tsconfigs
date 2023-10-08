@@ -15,9 +15,7 @@
     "url": "https://github.com/kiki-kanri/kikiutils-node-tsconfigs/issues"
   },
   "files": [
-    "./cjs/**/*",
-    "./esm/**/*",
-    "./tsconfig.base.json"
+    "./**/*"
   ],
   "keywords": [
     "tsconfig"

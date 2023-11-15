@@ -6,16 +6,12 @@
   "author": {
     "name": "kiki-kanri"
   },
-  "homepage": "https://github.com/kiki-kanri/kikiutils-node-tsconfigs#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kiki-kanri/kikiutils-node-tsconfigs.git"
   },
-  "bugs": {
-    "url": "https://github.com/kiki-kanri/kikiutils-node-tsconfigs/issues"
-  },
   "files": [
-    "./**/*"
+    "./"
   ],
   "keywords": [
     "tsconfig"

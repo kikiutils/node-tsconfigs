@@ -25,6 +25,7 @@ Available module options:
 - es2020
 - es2022
 - esnext
+- nodenext (The moduleResolution is also set to nodenext.)
 
 Available target options:
 - es2020

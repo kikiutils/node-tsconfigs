@@ -7,6 +7,7 @@ You can extend the @kikiutils/tsconfigs/module/target setting in tsconfig.json.
 **Detailed documentation will be added in future releases.**
 
 Example:
+
 ```json
 {
   "extends": "@kikiutils/tsconfigs/esnext/esnext.json",
@@ -32,3 +33,23 @@ Available target options:
 - es2021
 - es2022
 - esnext
+
+### Special Setting File
+
+If you are using bun, please use `@kikiutils/tsconfigs/bun.json` directly.
+
+The settings are based on the recommendations in the [official document](https://bun.sh/docs/typescript#suggested-compileroptions).
+
+Example:
+
+```json
+{
+  "extends": "@kikiutils/tsconfigs/bun.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
+}
+```

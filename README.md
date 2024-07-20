@@ -1,55 +1,61 @@
 # @kikiutils/tsconfigs
 
-Commonly used tsconfig configuration files.
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![License][license-src]][license-href]
 
-You can extend the @kikiutils/tsconfigs/module/target setting in tsconfig.json.
+Base tsconfigs files.
 
-**Detailed documentation will be added in future releases.**
+## Installation
 
-Example:
+Add dependency (example using pnpm).
+
+```bash
+pnpm add -D @kikiutils/tsconfigs
+```
+
+You can also use yarn, npm, or bun to add the dependency.
+
+That's it! You're ready to use this package in your project. Check out the instructions for [usage](#usage) below. ✨
+
+# Usage
+
+Here is an example of the tsconfig.json content:
 
 ```json
 {
-  "extends": "@kikiutils/tsconfigs/esnext/esnext.json",
+  "extends": "@kikiutils/tsconfigs/esnext/es2022.json",
   "compilerOptions": {
     "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
+    "declaration": true,
+    "outDir": "./dist"
+  },
+  "include": ["./src"]
 }
 ```
 
-Available module options:
-- cjs
-- es6
-- es2020
-- es2022
-- esnext
-- nodenext (The moduleResolution is also set to nodenext.)
+The file path for extend is composed as "@kikiutils/tsconfigs/`compilerOptions.module`/`compilerOptions.target`.json".
 
-Available target options:
-- es2020
-- es2021
-- es2022
-- esnext
+For example, if you want to set `compilerOptions.module` to `CommonJS` and `compilerOptions.target` to `ES2021`, the value of the extends option should be `@kikiutils/tsconfigs/commonjs/es2021.json`.
 
-### Special Setting File
+> [!NOTE]
+> If using the Bun runtime, please use `@kikiutils/tsconfigs/bun.json` directly.
 
-If you are using bun, please use `@kikiutils/tsconfigs/bun.json` directly.
+For more information about the `module` and `target` options, please visit the the following links.
 
-The settings are based on the recommendations in the [official document](https://bun.sh/docs/typescript#suggested-compileroptions).
+- [module](https://www.typescriptlang.org/tsconfig/#module)
+- [target](https://www.typescriptlang.org/tsconfig/#target)
 
-Example:
+## License
 
-```json
-{
-  "extends": "@kikiutils/tsconfigs/bun.json",
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@/*": ["./*"]
-    }
-  }
-}
-```
+[MIT License](./LICENSE)
+
+<!-- Badges -->
+[npm-version-src]: https://img.shields.io/npm/v/@kikiutils/tsconfigs/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@kikiutils/tsconfigs
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@kikiutils/tsconfigs
+
+[license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://github.com/kiki-kanri/kikiutils-node-tsconfigs/blob/main/LICENSE

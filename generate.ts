@@ -1,15 +1,10 @@
 import fsp from 'fs/promises';
 
-const baseContent = `
-{
-  "$schema": "https://json.schemastore.org/tsconfig.json",
-  "extends": "../tsconfig.base.json",
-  "compilerOptions": {
-    "module": "moduleToReplace",
-    "target": "targetToReplace"
-  }
-}
-`;
+const baseConfig = {
+	$schema: 'https://json.schemastore.org/tsconfig.json',
+	extends: '../tsconfig.base.json',
+	compilerOptions: { module: '', target: '' }
+} as const;
 
 const modules = [
 	'AMD',
@@ -46,8 +41,14 @@ const targets = [
 
 (async () => {
 	for (const module of modules) {
-		await fsp.rm(`./${module.toLowerCase()}`, { force: true, recursive: true });
-		await fsp.mkdir(`./${module.toLowerCase()}`, { recursive: true });
-		for (const target of targets) await fsp.writeFile(`./${module.toLowerCase()}/${target.toLowerCase()}.json`, baseContent.replace('moduleToReplace', module).replace('targetToReplace', target));
+		const lowerCaseModule = module.toLowerCase();
+		await fsp.rm(`./${lowerCaseModule}`, { force: true, recursive: true });
+		await fsp.mkdir(`./${lowerCaseModule}`, { recursive: true });
+		const config = JSON.parse(JSON.stringify(baseConfig));
+		config.compilerOptions.module = module;
+		for (const target of targets) {
+			config.compilerOptions.target = target;
+			await fsp.writeFile(`./${lowerCaseModule}/${target.toLowerCase()}.json`, JSON.stringify(config, null, 2));
+		}
 	}
 })();

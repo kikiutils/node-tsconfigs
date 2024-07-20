@@ -46,6 +46,8 @@ const targets = [
 		await fsp.mkdir(`./${lowerCaseModule}`, { recursive: true });
 		const config = JSON.parse(JSON.stringify(baseConfig));
 		config.compilerOptions.module = module;
+		// prettier-ignore
+		if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
 		for (const target of targets) {
 			config.compilerOptions.target = target;
 			await fsp.writeFile(`./${lowerCaseModule}/${target.toLowerCase()}.json`, JSON.stringify(config, null, 2));

@@ -9,8 +9,7 @@
     "url": "git+https://github.com/kiki-kanri/kikiutils-node-tsconfigs.git"
   },
   "scripts": {
-    "generate": "tsx ./generate.ts",
-    "prepack": "npm run generate"
+    "generate": "tsx ./generate.ts"
   },
   "devDependencies": {
     "@kikiutils/prettierrc": "^1.3.2",

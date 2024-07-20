@@ -14,7 +14,6 @@ const modules = [
 	'ES2020',
 	'ES2022',
 	'ESNext',
-	'Node',
 	'None',
 	'Node16',
 	'NodeNext',

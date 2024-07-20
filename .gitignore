@@ -155,3 +155,18 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+
+# Ignore all files except those starting with an exclamation mark.
+*
+!.gitignore
+!.npmignore
+!.vscode
+!.vscode/*
+!bun.json
+!generate.ts
+!LICENSE
+!pnpm-lock.yaml
+!tsconfig.base.json
+!tsconfig.json
+!package.json
+!README.md

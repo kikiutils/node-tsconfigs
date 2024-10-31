@@ -18,7 +18,7 @@ You can also use yarn, npm, or bun to add the dependency.
 
 That's it! You're ready to use this package in your project. Check out the instructions for [usage](#usage) below ✨.
 
-# Usage
+## Usage
 
 Here is an example of the tsconfig.json content:
 
@@ -51,11 +51,11 @@ For more information about the `module` and `target` options, please visit the t
 [MIT License](./LICENSE)
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@kikiutils/tsconfigs/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-version-href]: https://npmjs.com/package/@kikiutils/tsconfigs
+[npm-version-src]: https://img.shields.io/npm/v/@kikiutils/tsconfigs/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
 [npm-downloads-href]: https://npmjs.com/package/@kikiutils/tsconfigs
+[npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://github.com/kiki-kanri/kikiutils-node-tsconfigs/blob/main/LICENSE
+[license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D

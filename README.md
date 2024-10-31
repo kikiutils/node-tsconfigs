@@ -4,7 +4,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-Base tsconfigs files.
+Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.
 
 ## Installation
 

@@ -1,9 +1,9 @@
-import fsp from 'fs/promises';
+import fsp from 'node:fs/promises';
 
 const baseConfig = {
 	$schema: 'https://json.schemastore.org/tsconfig.json',
+	compilerOptions: { module: '', target: '' },
 	extends: '../tsconfig.base.json',
-	compilerOptions: { module: '', target: '' }
 } as const;
 
 const modules = [
@@ -19,7 +19,7 @@ const modules = [
 	'NodeNext',
 	'Preserve',
 	'System',
-	'UMD'
+	'UMD',
 ] as const;
 
 const targets = [
@@ -35,7 +35,7 @@ const targets = [
 	'ES2021',
 	'ES2022',
 	'ES2023',
-	'ESNext'
+	'ESNext',
 ] as const;
 
 (async () => {
@@ -45,7 +45,6 @@ const targets = [
 		await fsp.mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
 		const config = JSON.parse(JSON.stringify(baseConfig));
 		config.compilerOptions.module = module;
-		// prettier-ignore
 		if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
 		for (const target of targets) {
 			config.compilerOptions.target = target;

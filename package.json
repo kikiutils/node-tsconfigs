@@ -2,12 +2,17 @@
   "name": "@kikiutils/tsconfigs",
   "version": "3.0.2",
   "description": "Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.",
-  "license": "MIT",
   "author": "kiki-kanri",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kiki-kanri/kikiutils-node-tsconfigs.git"
   },
+  "keywords": [
+    "bun",
+    "tsconfig",
+    "tsconfigs"
+  ],
   "scripts": {
     "generate": "tsx ./generate.ts",
     "release": "pnpm run generate && changelogen --no-output --push --release && sh ./build-and-publish.sh"
@@ -17,10 +22,5 @@
     "@kikiutils/eslint-config": "^0.3.0",
     "@types/node": "^22.9.0",
     "tsx": "^4.19.2"
-  },
-  "keywords": [
-    "bun",
-    "tsconfig",
-    "tsconfigs"
-  ]
+  }
 }

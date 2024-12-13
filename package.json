@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "@kikiutils/changelogen": "^0.7.0",
-    "@kikiutils/eslint-config": "^0.3.0",
-    "@types/node": "^22.9.0",
+    "@kikiutils/eslint-config": "^0.7.1",
+    "@types/node": "^22.10.2",
     "tsx": "^4.19.2"
   }
 }

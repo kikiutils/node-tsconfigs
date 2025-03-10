@@ -57,5 +57,5 @@ For more information about the `module` and `target` options, please visit the t
 [npm-downloads-href]: https://npmjs.com/package/@kikiutils/tsconfigs
 [npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
 
-[license-href]: https://github.com/kiki-kanri/kikiutils-node-tsconfigs/blob/main/LICENSE
+[license-href]: https://github.com/kikiutils/node-tsconfigs/blob/main/LICENSE
 [license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D

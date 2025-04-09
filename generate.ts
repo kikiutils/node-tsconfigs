@@ -1,4 +1,8 @@
-import fsp from 'node:fs/promises';
+import {
+    mkdir,
+    rm,
+    writeFile,
+} from 'node:fs/promises';
 
 const baseConfig = {
     $schema: 'https://json.schemastore.org/tsconfig.json',
@@ -42,7 +46,7 @@ const targets = [
 ] as const;
 
 (async () => {
-    await fsp.rm(
+    await rm(
         './dist',
         {
             force: true,
@@ -52,7 +56,7 @@ const targets = [
 
     for (const module of modules) {
         const lowerCaseModule = module.toLowerCase();
-        await fsp.mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
+        await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
         const config = JSON.parse(JSON.stringify(baseConfig));
         config.compilerOptions.module = module;
         if (
@@ -65,7 +69,7 @@ const targets = [
 
         for (const target of targets) {
             config.compilerOptions.target = target;
-            await fsp.writeFile(
+            await writeFile(
                 `./dist/${lowerCaseModule}/${target.toLowerCase()}.json`,
                 JSON.stringify(config, null, 2),
             );

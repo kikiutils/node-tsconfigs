@@ -65,7 +65,10 @@ const targets = [
 
         for (const target of targets) {
             config.compilerOptions.target = target;
-            await fsp.writeFile(`./dist/${lowerCaseModule}/${target.toLowerCase()}.json`, JSON.stringify(config, null, 2));
+            await fsp.writeFile(
+                `./dist/${lowerCaseModule}/${target.toLowerCase()}.json`,
+                JSON.stringify(config, null, 2),
+            );
         }
     }
 })();

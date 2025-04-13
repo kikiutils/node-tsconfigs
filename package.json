@@ -1,7 +1,7 @@
 {
   "name": "@kikiutils/tsconfigs",
   "type": "module",
-  "version": "4.0.1",
+  "version": "4.1.0",
   "description": "Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.",
   "author": "kiki-kanri",
   "license": "MIT",

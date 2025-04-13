@@ -1,5 +1,37 @@
 # Changelog
 
+## v4.1.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.0.1...v4.1.0)
+
+### 🚀 Enhancements
+
+- Add `Node18` module and `ES2024` target ([1726c00](https://github.com/kikiutils/node-tsconfigs/commit/1726c00))
+
+### 💅 Refactors
+
+- Update generate script ([4198767](https://github.com/kikiutils/node-tsconfigs/commit/4198767))
+
+### 📖 Documentation
+
+- Add CHANGELOG ([d2ce574](https://github.com/kikiutils/node-tsconfigs/commit/d2ce574))
+- Update README ([1a4b33e](https://github.com/kikiutils/node-tsconfigs/commit/1a4b33e))
+
+### 📦 Build
+
+- Update generate process to run `generate.ts` directly with Node.js ([cb1939d](https://github.com/kikiutils/node-tsconfigs/commit/cb1939d))
+- Update build-related configurations ([07941e9](https://github.com/kikiutils/node-tsconfigs/commit/07941e9))
+- Add `type-check` script to package.json and run it during release ([2b2426f](https://github.com/kikiutils/node-tsconfigs/commit/2b2426f))
+
+### 🏡 Chore
+
+- Upgrade dependencies ([354b10f](https://github.com/kikiutils/node-tsconfigs/commit/354b10f))
+- Remove `moduleResolution` setting from Bun configuration ([48cf5fc](https://github.com/kikiutils/node-tsconfigs/commit/48cf5fc))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v4.0.1
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.0.0...v4.0.1)

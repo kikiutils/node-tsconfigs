@@ -6,45 +6,99 @@
 
 Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.
 
+- [✨ Release Notes](./CHANGELOG.md)
+
+## Features
+
+- ⚙️ Preconfigured `tsconfig` with `strict` mode and related options enabled for stricter type checking
+- 🧬 Easy inheritance via the `extends` field in `tsconfig`
+- 🔀 Multiple `tsconfig` variants to support different `module` and `target` settings
+- 🍞 Includes official Bun settings for seamless integration
+
 ## Installation
 
-Add dependency (example using pnpm).
+Using [pnpm](https://pnpm.io):
 
 ```bash
 pnpm add -D @kikiutils/tsconfigs
 ```
 
-You can also use yarn, npm, or bun to add the dependency.
-
-That's it! You're ready to use this package in your project. Check out the instructions for [usage](#usage) below ✨.
+You can also use `yarn`, `npm`, or `bun`.
 
 ## Usage
 
-Here is an example of the tsconfig.json content:
+The base configuration is [`tsconfig.base.json`](./tsconfig.base.json).
+You can extend it directly or pick one that matches your desired `module` and `target`.
+
+Here's an example of a typical `tsconfig.json` setup:
 
 ```json
 {
   "extends": "@kikiutils/tsconfigs/esnext/es2022.json",
   "compilerOptions": {
-    "baseUrl": "./src",
     "declaration": true,
-    "outDir": "./dist"
+    "declarationDir": "./dist",
+    "declarationMap": true,
+    "emitDeclarationOnly": true
   },
   "include": ["./src"]
 }
 ```
 
-The file path for extend is composed as "@kikiutils/tsconfigs/`compilerOptions.module`/`compilerOptions.target`.json".
+The extends path is structured as:
 
-For example, if you want to set `compilerOptions.module` to `CommonJS` and `compilerOptions.target` to `ES2021`, the value of the extends option should be `@kikiutils/tsconfigs/commonjs/es2021.json`.
+```
+@kikiutils/tsconfigs/<module>/<target>.json
+```
+
+For example, to use CommonJS as the module and ES2021 as the target, set:
+
+```
+"extends": "@kikiutils/tsconfigs/commonjs/es2021.json"
+```
 
 > [!NOTE]
-> If using the Bun runtime, please use `@kikiutils/tsconfigs/bun.json` directly.
+> All paths and file names are lowercase.
+>
+> 🍞 If you're using the Bun runtime, simply use:
+>
+> ```
+> "extends": "@kikiutils/tsconfigs/bun.json"
+> ```
 
-For more information about the `module` and `target` options, please visit the the following links.
+### Available modules
 
-- [module](https://www.typescriptlang.org/tsconfig/#module)
-- [target](https://www.typescriptlang.org/tsconfig/#target)
+- AMD
+- CommonJS
+- ES6
+- ES2015
+- ES2020
+- ES2022
+- ESNext
+- Node16
+- Node18
+- NodeNext
+- None
+- Preserve
+- System
+- UMD
+
+### Available targets
+
+- ES3
+- ES5
+- ES6
+- ES2015
+- ES2016
+- ES2017
+- ES2018
+- ES2019
+- ES2020
+- ES2021
+- ES2022
+- ES2023
+- ES2024
+- ESNext
 
 ## License
 

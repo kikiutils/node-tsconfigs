@@ -15,10 +15,11 @@
     "tsconfigs"
   ],
   "scripts": {
+    "bumplog": "changelogen --bump --hideAuthorEmail",
     "generate": "node --experimental-strip-types ./generate.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "release": "pnpm run lint && pnpm run generate && changelogen --no-output --push --release && sh ./build-and-publish.sh"
+    "release": "pnpm run lint && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh"
   },
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",

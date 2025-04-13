@@ -8,7 +8,6 @@
     "lib": ["ESNext"],
     "module": "ESNext",
     "moduleDetection": "force",
-    "moduleResolution": "bundler",
     "noEmit": true,
     "target": "ESNext"
   }

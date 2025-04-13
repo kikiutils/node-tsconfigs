@@ -22,6 +22,7 @@ const modules = [
     'ES2022',
     'ESNext',
     'Node16',
+    'Node18',
     'NodeNext',
     'None',
     'Preserve',
@@ -42,6 +43,7 @@ const targets = [
     'ES2021',
     'ES2022',
     'ES2023',
+    'ES2024',
     'ESNext',
 ] as const;
 

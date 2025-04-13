@@ -4,14 +4,16 @@ import {
     writeFile,
 } from 'node:fs/promises';
 
-const baseConfig = {
+const baseConfigString = JSON.stringify({
+    /* eslint-disable perfectionist/sort-objects */
     $schema: 'https://json.schemastore.org/tsconfig.json',
+    extends: '../tsconfig.base.json',
     compilerOptions: {
         module: '',
         target: '',
     },
-    extends: '../tsconfig.base.json',
-} as const;
+    /* eslint-enable perfectionist/sort-objects */
+});
 
 const modules = [
     'AMD',
@@ -59,16 +61,10 @@ const targets = [
     for (const module of modules) {
         const lowerCaseModule = module.toLowerCase();
         await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
-        const config = JSON.parse(JSON.stringify(baseConfig));
+        const config = JSON.parse(baseConfigString);
         config.compilerOptions.module = module;
-        if (
-            [
-                'amd',
-                'system',
-                'umd',
-            ].includes(lowerCaseModule)
-        ) config.compilerOptions.verbatimModuleSyntax = false;
-
+        // eslint-disable-next-line style/array-bracket-newline, style/array-element-newline
+        if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
         for (const target of targets) {
             config.compilerOptions.target = target;
             await writeFile(

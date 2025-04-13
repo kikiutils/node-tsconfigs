@@ -1,5 +1,6 @@
 {
   "name": "@kikiutils/tsconfigs",
+  "type": "module",
   "version": "4.0.1",
   "description": "Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.",
   "author": "kiki-kanri",
@@ -14,7 +15,7 @@
     "tsconfigs"
   ],
   "scripts": {
-    "generate": "tsx ./generate.ts",
+    "generate": "node --experimental-strip-types ./generate.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "release": "pnpm run lint && pnpm run generate && changelogen --no-output --push --release && sh ./build-and-publish.sh"
@@ -22,12 +23,6 @@
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
-    "@types/node": "^22.14.1",
-    "tsx": "^4.19.3"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
+    "@types/node": "^22.14.1"
   }
 }

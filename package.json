@@ -19,11 +19,13 @@
     "generate": "node --experimental-strip-types ./generate.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "release": "pnpm run lint && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh"
+    "release": "pnpm run lint && pnpm run type-check && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh",
+    "type-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
-    "@types/node": "^22.14.1"
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
   }
 }

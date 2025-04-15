@@ -1,5 +1,17 @@
 # Changelog
 
+## v4.1.1
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.1.0...v4.1.1)
+
+### 📖 Documentation
+
+- Update package description and keywords ([73e8b5a](https://github.com/kikiutils/node-tsconfigs/commit/73e8b5a))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v4.1.0
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.0.1...v4.1.0)

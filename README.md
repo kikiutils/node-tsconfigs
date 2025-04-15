@@ -4,7 +4,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-Base configuration files for TypeScript projects, simplifying setup and configuration for various environments.
+Preconfigured TypeScript config files for stricter type checking and multi-environment support.
 
 - [✨ Release Notes](./CHANGELOG.md)
 

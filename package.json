@@ -36,5 +36,10 @@
     "@kikiutils/eslint-config": "^0.12.2",
     "@types/node": "^22.14.1",
     "typescript": "^5.8.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

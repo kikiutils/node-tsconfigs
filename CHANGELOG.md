@@ -1,5 +1,31 @@
 # Changelog
 
+## v5.0.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.1.1...v5.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️ Update base tsconfig ([5149bef](https://github.com/kikiutils/node-tsconfigs/commit/5149bef))
+- Add shared Jest config ([ba5dd3d](https://github.com/kikiutils/node-tsconfigs/commit/ba5dd3d))
+
+### 📖 Documentation
+
+- Update README ([938793e](https://github.com/kikiutils/node-tsconfigs/commit/938793e))
+
+### 🏡 Chore
+
+- Remove `pnpm-workspace.yaml` and configure `pnpm.onlyBuiltDependencies` in package.json ([45c738a](https://github.com/kikiutils/node-tsconfigs/commit/45c738a))
+- Format bun config file ([3a522da](https://github.com/kikiutils/node-tsconfigs/commit/3a522da))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️ Update base tsconfig ([5149bef](https://github.com/kikiutils/node-tsconfigs/commit/5149bef))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v4.1.1
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.1.0...v4.1.1)

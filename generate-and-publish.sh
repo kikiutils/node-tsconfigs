@@ -6,6 +6,7 @@ cd "$(dirname "$(readlink -f "$0")")"
 
 pnpm run generate
 cp ./bun.json \
+    ./jest.json \
     ./LICENSE \
     ./package.json \
     ./README.md \

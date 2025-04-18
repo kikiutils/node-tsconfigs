@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.0.1
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.0...v5.0.1)
+
+### 🩹 Fixes
+
+- Include Jest config in npm pack ([48ea38b](https://github.com/kikiutils/node-tsconfigs/commit/48ea38b))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v5.0.0
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v4.1.1...v5.0.0)

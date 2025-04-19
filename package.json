@@ -29,7 +29,7 @@
     "lint": "eslint",
     "lint:fix": "eslint --fix",
     "release": "pnpm run lint && pnpm run type-check && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh",
-    "type-check": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",

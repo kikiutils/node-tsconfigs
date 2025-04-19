@@ -5,7 +5,7 @@ export default {
     transform: {
         '^.+\\.tsx?$': [
             'ts-jest',
-            { tsconfig: './tsconfig.jest.json' },
+            { tsconfig: './jest.json' },
         ],
     },
     workerThreads: true,

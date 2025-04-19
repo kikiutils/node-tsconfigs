@@ -2,6 +2,7 @@
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
+<!-- [![codecov][codecov-src]][codecov-href] -->
 [![License][license-src]][license-href]
 
 Preconfigured TypeScript config files for stricter type checking and multi-environment support.
@@ -117,6 +118,9 @@ For unit testing with Jest, you can extend the shared Jest config:
 
 [npm-downloads-href]: https://npmjs.com/package/@kikiutils/tsconfigs
 [npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
+
+<!-- [codecov-href]: https://codecov.io/gh/kikiutils/node-tsconfigs
+[codecov-src]: https://codecov.io/gh/kikiutils/node-tsconfigs/graph/badge.svg?token=RNU7FNG8HD -->
 
 [license-href]: https://github.com/kikiutils/node-tsconfigs/blob/main/LICENSE
 [license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D

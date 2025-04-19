@@ -28,13 +28,17 @@
     "generate": "node --experimental-strip-types ./generate.ts",
     "lint": "eslint",
     "lint:fix": "eslint --fix",
-    "release": "pnpm run lint && pnpm run type-check && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh",
+    "release": "pnpm run lint && pnpm run test && pnpm run typecheck && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh",
+    "test": "tsc -p ./tsconfig.test-check.json && jest --coverage",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@kikiutils/changelogen": "^0.8.0",
     "@kikiutils/eslint-config": "^0.12.2",
+    "@types/jest": "^29.5.14",
     "@types/node": "^22.14.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.2",
     "typescript": "^5.8.3"
   },
   "pnpm": {

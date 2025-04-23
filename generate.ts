@@ -63,7 +63,7 @@ const targets = [
         await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
         const config = JSON.parse(baseConfigString);
         config.compilerOptions.module = module;
-        // eslint-disable-next-line style/array-bracket-newline, style/array-element-newline
+        // eslint-disable-next-line style/array-element-newline
         if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
         for (const target of targets) {
             config.compilerOptions.target = target;

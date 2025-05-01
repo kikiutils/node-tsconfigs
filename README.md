@@ -114,13 +114,13 @@ For unit testing with Jest, you can extend the shared Jest config:
 
 <!-- Badges -->
 [npm-version-href]: https://npmjs.com/package/@kikiutils/tsconfigs
-[npm-version-src]: https://img.shields.io/npm/v/@kikiutils/tsconfigs/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-src]: https://img.shields.io/npm/v/@kikiutils/tsconfigs/latest.svg?colorA=18181b&colorB=28cf8d&style=flat
 
 [npm-downloads-href]: https://npmjs.com/package/@kikiutils/tsconfigs
-[npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-src]: https://img.shields.io/npm/dm/@kikiutils/tsconfigs.svg?colorA=18181b&colorB=28cf8d&style=flat
 
 <!-- [codecov-href]: https://codecov.io/gh/kikiutils/node-tsconfigs
-[codecov-src]: https://codecov.io/gh/kikiutils/node-tsconfigs/graph/badge.svg?token=RNU7FNG8HD -->
+[codecov-src]: https://codecov.io/gh/kikiutils/node-tsconfigs/graph/badge.svg?token= -->
 
 [license-href]: https://github.com/kikiutils/node-tsconfigs/blob/main/LICENSE
-[license-src]: https://img.shields.io/npm/l/@kikiutils/tsconfigs.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-src]: https://img.shields.io/github/license/kikiutils/node-tsconfigs?colorA=18181b&colorB=28cf8d&style=flat

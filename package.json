@@ -26,8 +26,8 @@
   "scripts": {
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "generate": "node --experimental-strip-types ./generate.ts",
-    "lint": "eslint",
-    "lint:fix": "eslint --fix",
+    "lint": "eslint --max-warnings 0",
+    "lint:fix": "eslint --fix --max-warnings 0",
     "release": "pnpm run lint && pnpm run test && pnpm run typecheck && pnpm run generate && changelogen --hideAuthorEmail --push --release && sh ./generate-and-publish.sh",
     "test": "tsc -p ./tsconfig.test-check.json && jest --coverage",
     "typecheck": "tsc --noEmit"

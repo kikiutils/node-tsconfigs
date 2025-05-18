@@ -1,5 +1,53 @@
 # Changelog
 
+## v5.0.2
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.1...v5.0.2)
+
+### 📖 Documentation
+
+- Update README badges urls ([499bc71](https://github.com/kikiutils/node-tsconfigs/commit/499bc71))
+- Replace `%2F` with `/` in badge URLs in README ([4aaf916](https://github.com/kikiutils/node-tsconfigs/commit/4aaf916))
+- Update README ([9374681](https://github.com/kikiutils/node-tsconfigs/commit/9374681))
+
+### 🏡 Chore
+
+- Format script ([16ca049](https://github.com/kikiutils/node-tsconfigs/commit/16ca049))
+- Update file permissions after installing or updating dependencies ([d141f76](https://github.com/kikiutils/node-tsconfigs/commit/d141f76))
+- Add `--hideAuthorEmail` flag to bumplog command ([382091b](https://github.com/kikiutils/node-tsconfigs/commit/382091b))
+- Add typecheck command to package.json scripts ([2a1f7e0](https://github.com/kikiutils/node-tsconfigs/commit/2a1f7e0))
+- Rename `type-check` command to `typecheck` ([d5ccc52](https://github.com/kikiutils/node-tsconfigs/commit/d5ccc52))
+- Rename `jest.config.js` to `jest.config.mjs` ([76371a1](https://github.com/kikiutils/node-tsconfigs/commit/76371a1))
+- Reorder lint, test, and build steps in release command ([b63dcb4](https://github.com/kikiutils/node-tsconfigs/commit/b63dcb4))
+- Add and update configurations for future test setups ([5324488](https://github.com/kikiutils/node-tsconfigs/commit/5324488))
+- Disable `isolatedDeclarations` in tsconfig ([ed1636f](https://github.com/kikiutils/node-tsconfigs/commit/ed1636f))
+- Update `modify-files-permissions.sh` ([89f72e3](https://github.com/kikiutils/node-tsconfigs/commit/89f72e3))
+- Upgrade dependencies and format code ([088efbc](https://github.com/kikiutils/node-tsconfigs/commit/088efbc))
+- Add option to `upgrade-dependencies.sh` to clean `node_modules` and `pnpm-lock.yaml` before upgrading ([e542b14](https://github.com/kikiutils/node-tsconfigs/commit/e542b14))
+- Upgrade dependencies ([d3ee5a7](https://github.com/kikiutils/node-tsconfigs/commit/d3ee5a7))
+- Ensure all scripts change to their own directory before execution ([9be5fbf](https://github.com/kikiutils/node-tsconfigs/commit/9be5fbf))
+- Update ignore files ([c81c294](https://github.com/kikiutils/node-tsconfigs/commit/c81c294))
+- **scripts:** Ensure all scripts `cd` to their current directory correctly ([5362c3b](https://github.com/kikiutils/node-tsconfigs/commit/5362c3b))
+- Set `--max-warnings=0` for `lint` and `lint:fix` ([bffe476](https://github.com/kikiutils/node-tsconfigs/commit/bffe476))
+- Set eslint config to enable `lib` mode ([59e03e4](https://github.com/kikiutils/node-tsconfigs/commit/59e03e4))
+- Disable `ts/explicit-function-return-type` eslint rule ([5190f6b](https://github.com/kikiutils/node-tsconfigs/commit/5190f6b))
+- Lint code ([f8f0974](https://github.com/kikiutils/node-tsconfigs/commit/f8f0974))
+- **test:** Migrate from `jest` to `vitest` ([9a9d869](https://github.com/kikiutils/node-tsconfigs/commit/9a9d869))
+
+### ✅ Tests
+
+- Add pass test unit ([d7b98bd](https://github.com/kikiutils/node-tsconfigs/commit/d7b98bd))
+
+### 🤖 CI
+
+- Add test github workflow config file ([dd421d1](https://github.com/kikiutils/node-tsconfigs/commit/dd421d1))
+- Update test workflow ([1519e46](https://github.com/kikiutils/node-tsconfigs/commit/1519e46))
+- Update condition for uploading to Codecov in workflow job ([39851ac](https://github.com/kikiutils/node-tsconfigs/commit/39851ac))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v5.0.1
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.0...v5.0.1)

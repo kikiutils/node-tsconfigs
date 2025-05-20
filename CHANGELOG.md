@@ -1,5 +1,19 @@
 # Changelog
 
+## v5.0.3
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.2...v5.0.3)
+
+### 🏡 Chore
+
+- Split `tsconfig` and create build-specific config for production builds ([564b6d2](https://github.com/kikiutils/node-tsconfigs/commit/564b6d2))
+- **vitest:** Configure coverage to collect files only under `src/` ([e2c7f65](https://github.com/kikiutils/node-tsconfigs/commit/e2c7f65))
+- Remove all test and coverage related dependencies and configurations ([c980a5d](https://github.com/kikiutils/node-tsconfigs/commit/c980a5d))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v5.0.2
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.1...v5.0.2)

@@ -1,7 +1,7 @@
 {
   "name": "@kikiutils/tsconfigs",
   "type": "module",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "Preconfigured TypeScript config files for stricter type checking and multi-environment support.",
   "author": "kiki-kanri",
   "license": "MIT",

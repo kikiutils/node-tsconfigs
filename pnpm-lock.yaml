@@ -12,8 +12,8 @@ importers:
         specifier: ^0.8.0
         version: 0.8.0
       '@kikiutils/eslint-config':
-        specifier: ^1.1.0
-        version: 1.1.0(@vue/compiler-sfc@3.5.14)(jiti@2.4.2)(tailwindcss@3.4.17)(typescript@5.8.3)(vue-eslint-parser@10.1.3(eslint@9.27.0(jiti@2.4.2)))
+        specifier: ^1.2.1
+        version: 1.2.1(@vue/compiler-sfc@3.5.14)(jiti@2.4.2)(tailwindcss@3.4.17)(typescript@5.8.3)(vue-eslint-parser@10.1.3(eslint@9.27.0(jiti@2.4.2)))
       '@types/node':
         specifier: ^22.15.21
         version: 22.15.21
@@ -239,8 +239,8 @@ packages:
     resolution: {integrity: sha512-9LigtBNCIQILEVHrARvF0esmisEb7qHSFJzY+j3OgRiDm4PAXES8FMYPSBxI2eoQjoswQ4lUE75GbVerejN76Q==}
     hasBin: true
 
-  '@kikiutils/eslint-config@1.1.0':
-    resolution: {integrity: sha512-Bsnbgk6KwDA63hFAyWigqA56Mz682UdQQ9+7H3UUPdaLsKDpTDepjc0bdzmL1R5laoK6YE6m8uRVWOcxWdv3Ag==}
+  '@kikiutils/eslint-config@1.2.1':
+    resolution: {integrity: sha512-+aiJm7TWP8awCcsG2oqD34o/NS+mBM8D9FXRJdg78lEBeIpZJiUQjHsSBr2PzDwHyGehhhwX9wH4QqFhcQ6aAw==}
     engines: {node: '>=18.12.1'}
 
   '@kikiutils/eslint-plugin-tailwindcss@3.19.0':
@@ -2109,7 +2109,7 @@ snapshots:
     transitivePeerDependencies:
       - magicast
 
-  '@kikiutils/eslint-config@1.1.0(@vue/compiler-sfc@3.5.14)(jiti@2.4.2)(tailwindcss@3.4.17)(typescript@5.8.3)(vue-eslint-parser@10.1.3(eslint@9.27.0(jiti@2.4.2)))':
+  '@kikiutils/eslint-config@1.2.1(@vue/compiler-sfc@3.5.14)(jiti@2.4.2)(tailwindcss@3.4.17)(typescript@5.8.3)(vue-eslint-parser@10.1.3(eslint@9.27.0(jiti@2.4.2)))':
     dependencies:
       '@antfu/eslint-config': 4.13.2(@vue/compiler-sfc@3.5.14)(eslint-plugin-format@1.0.1(eslint@9.27.0(jiti@2.4.2)))(eslint@9.27.0(jiti@2.4.2))(typescript@5.8.3)
       '@kikiutils/eslint-plugin-tailwindcss': 3.19.0(tailwindcss@3.4.17)

@@ -6,7 +6,7 @@
     "jsx": "react-jsx",
     "lib": ["ESNext"],
     "moduleDetection": "force",
-    "module": "ESNext",
+    "module": "Preserve",
     "allowImportingTsExtensions": true,
     "allowJs": true,
     "noEmit": true

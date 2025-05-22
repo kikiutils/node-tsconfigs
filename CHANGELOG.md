@@ -1,5 +1,18 @@
 # Changelog
 
+## v5.0.4
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.3...v5.0.4)
+
+### 🏡 Chore
+
+- Update bun config ([10b1475](https://github.com/kikiutils/node-tsconfigs/commit/10b1475))
+- Upgrade dependencies ([28a42b4](https://github.com/kikiutils/node-tsconfigs/commit/28a42b4))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v5.0.3
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.2...v5.0.3)

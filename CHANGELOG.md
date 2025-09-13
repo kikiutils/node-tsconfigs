@@ -1,5 +1,17 @@
 # Changelog
 
+## v5.0.5
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.4...v5.0.5)
+
+### 🏡 Chore
+
+- Upgrade devDependencies ([529c440](https://github.com/kikiutils/node-tsconfigs/commit/529c440))
+
+### ❤️ Contributors
+
+- kiki-kanri
+
 ## v5.0.4
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.3...v5.0.4)

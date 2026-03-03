@@ -1,5 +1,74 @@
 # Changelog
 
+## v5.1.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.5...v5.1.0)
+
+### 🚀 Enhancements
+
+- Add `update-peer-dependencies-meta.ts` ([643c006](https://github.com/kikiutils/node-tsconfigs/commit/643c006))
+
+### 🩹 Fixes
+
+- Resolve alias configuration error in tsdown setup ([656e2e0](https://github.com/kikiutils/node-tsconfigs/commit/656e2e0))
+- Add missing -b flag to typecheck command ([cf0c795](https://github.com/kikiutils/node-tsconfigs/commit/cf0c795))
+- Remove custom exports configuration from tsdown ([efb18bc](https://github.com/kikiutils/node-tsconfigs/commit/efb18bc))
+- Remove tsdown `remove-types-js` plugin ([6922c2f](https://github.com/kikiutils/node-tsconfigs/commit/6922c2f))
+- Remove tsdown remove-types-js plugin and custom exports configuration ([735a3a9](https://github.com/kikiutils/node-tsconfigs/commit/735a3a9))
+- Ensure tsdown `customExports` returns after deleting keys containing internals ([7324bab](https://github.com/kikiutils/node-tsconfigs/commit/7324bab))
+- Adjust `customExports` order in `tsdown.config` to move wildcard (`*`) exports to the end ([0b3f357](https://github.com/kikiutils/node-tsconfigs/commit/0b3f357))
+
+### 💅 Refactors
+
+- Rename func parameters in `arr.map` and similar methods to `item` for consistency ([c5768ac](https://github.com/kikiutils/node-tsconfigs/commit/c5768ac))
+- Tidy up code ([1a92f2c](https://github.com/kikiutils/node-tsconfigs/commit/1a92f2c))
+
+### 📖 Documentation
+
+- Update README ([63ba464](https://github.com/kikiutils/node-tsconfigs/commit/63ba464))
+
+### 📦 Build
+
+- Clean up js files under `dist/types` after tsdown build and update exports config ([2affd31](https://github.com/kikiutils/node-tsconfigs/commit/2affd31))
+- Clean up js files under `dist/types` after tsdown build and update exports config ([299e647](https://github.com/kikiutils/node-tsconfigs/commit/299e647))
+- Clean up js files under `dist/types` after tsdown build and update exports config ([6fa1d2b](https://github.com/kikiutils/node-tsconfigs/commit/6fa1d2b))
+- Update tsdown config to treat all dependencies as external ([f5e4f7a](https://github.com/kikiutils/node-tsconfigs/commit/f5e4f7a))
+- Update tsdown customExports to remove entries with keys containing "internals" ([59b1622](https://github.com/kikiutils/node-tsconfigs/commit/59b1622))
+- Update tsdown entry ([2e67d6b](https://github.com/kikiutils/node-tsconfigs/commit/2e67d6b))
+- Set tsdown external from package.json instead of using wildcard * ([7dc5f28](https://github.com/kikiutils/node-tsconfigs/commit/7dc5f28))
+- Update `customExports` rules to enable IDE import hints for package usage ([e4111c0](https://github.com/kikiutils/node-tsconfigs/commit/e4111c0))
+- Update `customExports` rules to enable IDE import hints for package usage ([fa88888](https://github.com/kikiutils/node-tsconfigs/commit/fa88888))
+
+### 🏡 Chore
+
+- Update eslint config ([99cd82e](https://github.com/kikiutils/node-tsconfigs/commit/99cd82e))
+- Update tsdown entry ([9cbb6bb](https://github.com/kikiutils/node-tsconfigs/commit/9cbb6bb))
+- Disable `isolatedDeclarations` ([85f066e](https://github.com/kikiutils/node-tsconfigs/commit/85f066e))
+- Update eslint config ([09d584b](https://github.com/kikiutils/node-tsconfigs/commit/09d584b))
+- Update all scripts ([fa5e797](https://github.com/kikiutils/node-tsconfigs/commit/fa5e797))
+- Update scripts ([c203a56](https://github.com/kikiutils/node-tsconfigs/commit/c203a56))
+- Set minimum supported version to 22.12.0 ([76e8cc1](https://github.com/kikiutils/node-tsconfigs/commit/76e8cc1))
+- Remove alias config ([e353604](https://github.com/kikiutils/node-tsconfigs/commit/e353604))
+- Change `update-peer-dependencies-meta.ts` to non-executable permission file ([62a7690](https://github.com/kikiutils/node-tsconfigs/commit/62a7690))
+- Update base tsconfig ([26f4158](https://github.com/kikiutils/node-tsconfigs/commit/26f4158))
+- Add `.editorconfig` ([11056ce](https://github.com/kikiutils/node-tsconfigs/commit/11056ce))
+- Upgrade devDependencies ([aca04e8](https://github.com/kikiutils/node-tsconfigs/commit/aca04e8))
+- Replace `@kikiutils/changelogen` with `changelogen` ([8d1d648](https://github.com/kikiutils/node-tsconfigs/commit/8d1d648))
+- Update script ([44312fb](https://github.com/kikiutils/node-tsconfigs/commit/44312fb))
+- Update `pnpm.onlyBuiltDependencies` ([9788a78](https://github.com/kikiutils/node-tsconfigs/commit/9788a78))
+- Update tsdown config ([59407a9](https://github.com/kikiutils/node-tsconfigs/commit/59407a9))
+- Disable tsdown `fixedExtension` config ([9039405](https://github.com/kikiutils/node-tsconfigs/commit/9039405))
+- Update eslint config ([e75c3d7](https://github.com/kikiutils/node-tsconfigs/commit/e75c3d7))
+- Update vscode settings ([7b2f6f9](https://github.com/kikiutils/node-tsconfigs/commit/7b2f6f9))
+
+### 🤖 CI
+
+- Update config file ([cfba23c](https://github.com/kikiutils/node-tsconfigs/commit/cfba23c))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v5.0.5
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.4...v5.0.5)

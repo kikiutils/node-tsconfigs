@@ -1,9 +1,12 @@
-import { createConfig } from '@kikiutils/eslint-config';
+import { antfu } from '@antfu/eslint-config';
+import { createBaseConfigs } from '@kikiutils/eslint-config/base';
 
-export default createConfig(
-    'node',
+export default antfu(
     {
         ignores: ['tsconfig.base.json'],
         type: 'lib',
+        typescript: true,
     },
-).overrideRules({ 'ts/explicit-function-return-type': 'off' });
+    createBaseConfigs(),
+    { rules: { 'ts/explicit-function-return-type': 'off' } },
+);

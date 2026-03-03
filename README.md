@@ -48,19 +48,19 @@ Here's an example of a typical `tsconfig.json` setup:
 
 The extends path is structured as:
 
-```
+```jsonl
 @kikiutils/tsconfigs/<module>/<target>.json
 ```
 
 For example, to use CommonJS as the module and ES2021 as the target, set:
 
-```
+```jsonl
 "extends": "@kikiutils/tsconfigs/commonjs/es2021.json"
 ```
 
 For unit testing with Jest, you can extend the shared Jest config:
 
-```
+```jsonl
 "extends": "@kikiutils/tsconfigs/jest.json"
 ```
 
@@ -69,7 +69,7 @@ For unit testing with Jest, you can extend the shared Jest config:
 >
 > 🍞 If you're using the Bun runtime, simply use:
 >
-> ```
+> ```jsonl
 > "extends": "@kikiutils/tsconfigs/bun.json"
 > ```
 

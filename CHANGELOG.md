@@ -1,5 +1,25 @@
 # Changelog
 
+## v6.0.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.1.0...v6.0.0)
+
+### 🏡 Chore
+
+- Update eslint config ([77a5f00](https://github.com/kikiutils/node-tsconfigs/commit/77a5f00))
+- Update deps, tsdown config and package scripts ([5ada952](https://github.com/kikiutils/node-tsconfigs/commit/5ada952))
+- Update deps and configs ([6082b0e](https://github.com/kikiutils/node-tsconfigs/commit/6082b0e))
+- ⚠️  Remove `allowSyntheticDefaultImports` and `esModuleInterop` configs for ts6 ([36f6a09](https://github.com/kikiutils/node-tsconfigs/commit/36f6a09))
+- Set the types field to `*` to match the behavior of previous versions ([6550e92](https://github.com/kikiutils/node-tsconfigs/commit/6550e92))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Remove `allowSyntheticDefaultImports` and `esModuleInterop` configs for ts6 ([36f6a09](https://github.com/kikiutils/node-tsconfigs/commit/36f6a09))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v5.1.0
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.0.5...v5.1.0)

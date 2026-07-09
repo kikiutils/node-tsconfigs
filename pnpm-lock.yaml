@@ -20,6 +20,9 @@ importers:
       changelogen:
         specifier: ^0.6.2
         version: 0.6.2
+      eslint:
+        specifier: ^10.6.0
+        version: 10.6.0(jiti@2.7.0)
       knip:
         specifier: ^6.25.0
         version: 6.25.0

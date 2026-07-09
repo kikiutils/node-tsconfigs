@@ -39,6 +39,7 @@
     "@kikiutils/eslint-config": "^9.2.0",
     "@types/node": "^26.1.0",
     "changelogen": "^0.6.2",
+    "eslint": "^10.6.0",
     "knip": "^6.25.0",
     "typescript": "^6.0.3"
   }

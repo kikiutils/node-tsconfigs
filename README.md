@@ -92,8 +92,6 @@ For unit testing with Jest, you can extend the shared Jest config:
 
 ### Available targets
 
-- ES3
-- ES5
 - ES6
 - ES2015
 - ES2016

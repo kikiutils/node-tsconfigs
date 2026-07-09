@@ -33,8 +33,6 @@ const modules = [
 ] as const;
 
 const targets = [
-    'ES3',
-    'ES5',
     'ES6',
     'ES2015',
     'ES2016',

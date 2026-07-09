@@ -1,5 +1,40 @@
 # Changelog
 
+## v7.0.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v6.0.0...v7.0.0)
+
+### 🩹 Fixes
+
+- Update script ([5e1d890](https://github.com/kikiutils/node-tsconfigs/commit/5e1d890))
+
+### 💅 Refactors
+
+- ⚠️  Remove jest file ([8a26f84](https://github.com/kikiutils/node-tsconfigs/commit/8a26f84))
+
+### 🏡 Chore
+
+- Add `.gitattributes` ([4645112](https://github.com/kikiutils/node-tsconfigs/commit/4645112))
+- Add `.omx/` to `.gitignore` ([a9a8cfa](https://github.com/kikiutils/node-tsconfigs/commit/a9a8cfa))
+- Update scripts ([723523c](https://github.com/kikiutils/node-tsconfigs/commit/723523c))
+- Upgrade deps ([482ac9a](https://github.com/kikiutils/node-tsconfigs/commit/482ac9a))
+- ⚠️  Drop es3 and es5 target support ([04ebe37](https://github.com/kikiutils/node-tsconfigs/commit/04ebe37))
+- Remove some options from `tsconfig.base` ([5614732](https://github.com/kikiutils/node-tsconfigs/commit/5614732))
+- Add eslint dev dep ([4bce2ac](https://github.com/kikiutils/node-tsconfigs/commit/4bce2ac))
+
+### 🤖 CI
+
+- Update node versions ([8f4edfd](https://github.com/kikiutils/node-tsconfigs/commit/8f4edfd))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Remove jest file ([8a26f84](https://github.com/kikiutils/node-tsconfigs/commit/8a26f84))
+- ⚠️  Drop es3 and es5 target support ([04ebe37](https://github.com/kikiutils/node-tsconfigs/commit/04ebe37))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v6.0.0
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v5.1.0...v6.0.0)

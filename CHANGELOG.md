@@ -1,5 +1,74 @@
 # Changelog
 
+## v8.0.0
+
+[compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v7.0.0...v8.0.0)
+
+### 🚀 Enhancements
+
+- ⚠️  Align generated configs with TypeScript 6 ([fa54f1c](https://github.com/kikiutils/node-tsconfigs/commit/fa54f1c))
+
+### 🩹 Fixes
+
+- **deps:** Pin TypeScript ESLint plugin to avoid false positives ([eadca5a](https://github.com/kikiutils/node-tsconfigs/commit/eadca5a))
+- Resolve lint and type errors ([2dff7db](https://github.com/kikiutils/node-tsconfigs/commit/2dff7db))
+- Remove leftover Jest config references ([dc7f72e](https://github.com/kikiutils/node-tsconfigs/commit/dc7f72e))
+
+### 💅 Refactors
+
+- **scripts:** Rename peer dependency metadata updater to sync ([cc094ef](https://github.com/kikiutils/node-tsconfigs/commit/cc094ef))
+
+### 📦 Build
+
+- Pin TypeScript override and organize maintenance scripts ([b878c55](https://github.com/kikiutils/node-tsconfigs/commit/b878c55))
+- Simplify tsdown configuration and add type validation ([5ba0dcb](https://github.com/kikiutils/node-tsconfigs/commit/5ba0dcb))
+- Generate scoped wildcard package exports from entries ([051558a](https://github.com/kikiutils/node-tsconfigs/commit/051558a))
+- Require Node.js 24.11.0 or later ([23e3608](https://github.com/kikiutils/node-tsconfigs/commit/23e3608))
+- ⚠️  Raise the minimum Node.js version to 24.15.0 ([b62f58c](https://github.com/kikiutils/node-tsconfigs/commit/b62f58c))
+- Require Node.js 24.15.0 and target ES2025 ([5563821](https://github.com/kikiutils/node-tsconfigs/commit/5563821))
+
+### 🏡 Chore
+
+- Ignore local AI tooling artifacts ([7cf272b](https://github.com/kikiutils/node-tsconfigs/commit/7cf272b))
+- Update `modify-files-permissions.sh` ([c56f31f](https://github.com/kikiutils/node-tsconfigs/commit/c56f31f))
+- Update `modify-files-permissions.sh` ([249c4c8](https://github.com/kikiutils/node-tsconfigs/commit/249c4c8))
+- Update `modify-files-permissions.sh` ([4c193c3](https://github.com/kikiutils/node-tsconfigs/commit/4c193c3))
+- Update `.gitignore` ([5d5bbc5](https://github.com/kikiutils/node-tsconfigs/commit/5d5bbc5))
+- Add `pnpm-workspace.yaml` ([bcd3c17](https://github.com/kikiutils/node-tsconfigs/commit/bcd3c17))
+- Update `pnpm-workspace.yaml` ([fe5e43f](https://github.com/kikiutils/node-tsconfigs/commit/fe5e43f))
+- Update `pnpm-workspace.yaml` ([5f000dd](https://github.com/kikiutils/node-tsconfigs/commit/5f000dd))
+- Upgrade deps ([4f0b8da](https://github.com/kikiutils/node-tsconfigs/commit/4f0b8da))
+- Update `.gitignore` ([87bd40c](https://github.com/kikiutils/node-tsconfigs/commit/87bd40c))
+- Update ignore files ([d91f81e](https://github.com/kikiutils/node-tsconfigs/commit/d91f81e))
+- Update `modify-files-permissions.sh` ([e5d2bee](https://github.com/kikiutils/node-tsconfigs/commit/e5d2bee))
+- Update `pnpm-workspace.yaml` ([307ba57](https://github.com/kikiutils/node-tsconfigs/commit/307ba57))
+- Remove `@typescript-eslint/eslint-plugin` from `overrides` ([9a7922a](https://github.com/kikiutils/node-tsconfigs/commit/9a7922a))
+- Update `minimumReleaseAgeExcludes` ([362ebd7](https://github.com/kikiutils/node-tsconfigs/commit/362ebd7))
+- Update pnpm config ([17fefba](https://github.com/kikiutils/node-tsconfigs/commit/17fefba))
+- Refine template export exclusions and script entrypoint ([4ffddaa](https://github.com/kikiutils/node-tsconfigs/commit/4ffddaa))
+- Lint code ([1c5c42d](https://github.com/kikiutils/node-tsconfigs/commit/1c5c42d))
+- Lint code ([ee81f39](https://github.com/kikiutils/node-tsconfigs/commit/ee81f39))
+- Update ignore files ([aceb847](https://github.com/kikiutils/node-tsconfigs/commit/aceb847))
+- Enable eslint cache and concurrency in lint scripts ([4398cae](https://github.com/kikiutils/node-tsconfigs/commit/4398cae))
+- Require a clean working tree for release ([3a64221](https://github.com/kikiutils/node-tsconfigs/commit/3a64221))
+
+### ✅ Tests
+
+- Verify every generated config with tsc ([81603a7](https://github.com/kikiutils/node-tsconfigs/commit/81603a7))
+
+### 🤖 CI
+
+- Rewrite test and coverage workflow ([c74a01e](https://github.com/kikiutils/node-tsconfigs/commit/c74a01e))
+
+#### ⚠️ Breaking Changes
+
+- ⚠️  Align generated configs with TypeScript 6 ([fa54f1c](https://github.com/kikiutils/node-tsconfigs/commit/fa54f1c))
+- ⚠️  Raise the minimum Node.js version to 24.15.0 ([b62f58c](https://github.com/kikiutils/node-tsconfigs/commit/b62f58c))
+
+### ❤️ Contributors
+
+- Kiki-kanri
+
 ## v7.0.0
 
 [compare changes](https://github.com/kikiutils/node-tsconfigs/compare/v6.0.0...v7.0.0)

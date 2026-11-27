@@ -29,6 +29,9 @@ importers:
       knip:
         specifier: ^6.48.0
         version: 6.48.0
+      ts-extras:
+        specifier: ^3.0.0
+        version: 3.0.0
       typescript:
         specifier: ^6.0.3
         version: 6.0.3

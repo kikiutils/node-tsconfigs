@@ -41,6 +41,7 @@
     "changelogen": "^0.6.2",
     "eslint": "^10.15.0",
     "knip": "^6.48.0",
+    "ts-extras": "^3.0.0",
     "typescript": "^6.0.3"
   }
 }

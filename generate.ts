@@ -47,28 +47,26 @@ const targets = [
     'ESNext',
 ] as const;
 
-(async () => {
-    await rm(
-        './dist',
-        {
-            force: true,
-            recursive: true,
-        },
-    );
+await rm(
+    './dist',
+    {
+        force: true,
+        recursive: true,
+    },
+);
 
-    for (const module of modules) {
-        const lowerCaseModule = module.toLowerCase();
-        await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
-        const config = JSON.parse(baseConfigString);
-        config.compilerOptions.module = module;
-        // eslint-disable-next-line style/array-element-newline
-        if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
-        for (const target of targets) {
-            config.compilerOptions.target = target;
-            await writeFile(
-                `./dist/${lowerCaseModule}/${target.toLowerCase()}.json`,
-                JSON.stringify(config, null, 2),
-            );
-        }
+for (const module of modules) {
+    const lowerCaseModule = module.toLowerCase();
+    await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
+    const config = JSON.parse(baseConfigString);
+    config.compilerOptions.module = module;
+    // eslint-disable-next-line style/array-element-newline
+    if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
+    for (const target of targets) {
+        config.compilerOptions.target = target;
+        await writeFile(
+            `./dist/${lowerCaseModule}/${target.toLowerCase()}.json`,
+            JSON.stringify(config, null, 2),
+        );
     }
-})();
+}

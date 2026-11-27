@@ -10,7 +10,7 @@ cd "${SCRIPT_DIR}"
 # Entries use 'octal-mode:literal-file-path', relative to this script.
 # Ignored paths take precedence over these permissions.
 CUSTOM_FILE_PERMISSIONS=(
-    '700:scripts/sync-peer-dependencies-meta.ts'
+    # '700:tools/my-command'
 )
 
 # Literal paths relative to this script; directories exclude their entire subtree.

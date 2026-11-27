@@ -31,7 +31,8 @@
     "knip:exports": "knip --exports",
     "lint": "eslint --cache --concurrency=auto --max-warnings 0",
     "lint:fix": "eslint --cache --concurrency=auto --fix --max-warnings 0",
-    "release": "pnpm run lint && pnpm run typecheck && pnpm run generate && changelogen --hideAuthorEmail --push --release && bash ./generate-and-publish.sh",
+    "release": "pnpm run lint && pnpm run typecheck && pnpm run test && changelogen --hideAuthorEmail --push --release && bash ./generate-and-publish.sh",
+    "test": "node ./generate.ts && node ./scripts/verify-configs.ts",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

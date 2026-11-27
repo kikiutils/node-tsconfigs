@@ -23,7 +23,7 @@ jobs:
           - ubuntu-latest
           - windows-latest
         include:
-          - coverage: true
+          - typecheck: true
             node: 24.0.0
             os: ubuntu-latest
 
@@ -41,16 +41,8 @@ jobs:
           version: latest
 
       - name: Run typecheck
-        if: ${{ matrix.coverage }}
+        if: ${{ matrix.typecheck }}
         run: pnpm run typecheck
 
-      - name: Run tests with coverage
+      - name: Run tests
         run: pnpm run test
-
-      - name: Upload coverage to Codecov
-        if: ${{ matrix.coverage }}
-        uses: codecov/codecov-action@v7
-        with:
-          fail_ci_if_error: true
-          files: ./coverage/lcov.info
-          token: ${{ secrets.CODECOV_TOKEN }}

@@ -24,6 +24,9 @@
     "typescript-settings"
   ],
   "sideEffects": false,
+  "engines": {
+    "node": ">=24.11.0"
+  },
   "scripts": {
     "bumplog": "changelogen --bump --hideAuthorEmail",
     "generate": "node ./generate.ts",

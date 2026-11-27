@@ -13,7 +13,6 @@ Preconfigured TypeScript config files for stricter type checking and multi-envir
 - ⚙️ Preconfigured `tsconfig` with `strict` mode, stricter type checking (`isolatedModules`, `noUncheckedSideEffectImports`), and clean ESM support
 - 🧬 Easy inheritance via the `extends` field in `tsconfig`
 - 🔀 Multiple `tsconfig` variants to support different `module` and `target` settings
-- 🧪 Shared Jest testing config for consistent test setup
 - 🍞 Includes official Bun settings for seamless integration
 
 ## Installation
@@ -56,12 +55,6 @@ For example, to use CommonJS as the module and ES2021 as the target, set:
 
 ```jsonl
 "extends": "@kikiutils/tsconfigs/commonjs/es2021.json"
-```
-
-For unit testing with Jest, you can extend the shared Jest config:
-
-```jsonl
-"extends": "@kikiutils/tsconfigs/jest.json"
 ```
 
 > [!NOTE]

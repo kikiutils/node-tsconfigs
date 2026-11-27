@@ -7,7 +7,6 @@ cd "${SCRIPTS_DIR}"
 
 pnpm run generate
 cp -p ./bun.json \
-    ./jest.json \
     ./LICENSE \
     ./package.json \
     ./README.md \

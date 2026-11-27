@@ -4,36 +4,24 @@ import {
     writeFile,
 } from 'node:fs/promises';
 
-const baseConfigString = JSON.stringify({
-    /* eslint-disable perfectionist/sort-objects */
-    $schema: 'https://json.schemastore.org/tsconfig.json',
-    extends: '../tsconfig.base.json',
-    compilerOptions: {
-        module: '',
-        target: '',
-    },
-    /* eslint-enable perfectionist/sort-objects */
-});
+import { objectEntries } from 'ts-extras';
 
-const modules = [
-    'AMD',
-    'CommonJS',
-    'ES6',
-    'ES2015',
-    'ES2020',
-    'ES2022',
-    'ESNext',
-    'Node16',
-    'Node18',
-    'NodeNext',
-    'None',
-    'Preserve',
-    'System',
-    'UMD',
-] as const;
+// Node module modes reject the base `bundler` resolution, so each one sets the resolution TypeScript requires.
+// CommonJS turns off `verbatimModuleSyntax`, which would otherwise require `import = require()` syntax.
+const modules = {
+    CommonJS: { verbatimModuleSyntax: false },
+    ES2015: {},
+    ES2020: {},
+    ES2022: {},
+    ESNext: {},
+    Node16: { moduleResolution: 'Node16' },
+    Node18: { moduleResolution: 'Node16' },
+    Node20: { moduleResolution: 'Node16' },
+    NodeNext: { moduleResolution: 'NodeNext' },
+    Preserve: {},
+};
 
 const targets = [
-    'ES6',
     'ES2015',
     'ES2016',
     'ES2017',
@@ -44,6 +32,7 @@ const targets = [
     'ES2022',
     'ES2023',
     'ES2024',
+    'ES2025',
     'ESNext',
 ] as const;
 
@@ -55,15 +44,22 @@ await rm(
     },
 );
 
-for (const module of modules) {
+for (const [module, moduleOptions] of objectEntries(modules)) {
     const lowerCaseModule = module.toLowerCase();
     await mkdir(`./dist/${lowerCaseModule}`, { recursive: true });
-    const config = JSON.parse(baseConfigString);
-    config.compilerOptions.module = module;
-    // eslint-disable-next-line style/array-element-newline
-    if (['amd', 'system', 'umd'].includes(lowerCaseModule)) config.compilerOptions.verbatimModuleSyntax = false;
     for (const target of targets) {
-        config.compilerOptions.target = target;
+        const config = {
+            /* eslint-disable perfectionist/sort-objects */
+            $schema: 'https://json.schemastore.org/tsconfig.json',
+            extends: '../tsconfig.base.json',
+            compilerOptions: {
+                module,
+                target,
+                ...moduleOptions,
+            },
+            /* eslint-enable perfectionist/sort-objects */
+        };
+
         await writeFile(
             `./dist/${lowerCaseModule}/${target.toLowerCase()}.json`,
             JSON.stringify(config, null, 2),

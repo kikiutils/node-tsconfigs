@@ -34,7 +34,7 @@ Here's an example of a typical `tsconfig.json` setup:
 
 ```json
 {
-  "extends": "@kikiutils/tsconfigs/esnext/es2022.json",
+  "extends": "@kikiutils/tsconfigs/esnext/es2024.json",
   "compilerOptions": {
     "declaration": true,
     "declarationDir": "./dist",
@@ -68,24 +68,19 @@ For example, to use CommonJS as the module and ES2021 as the target, set:
 
 ### Available modules
 
-- AMD
 - CommonJS
-- ES6
 - ES2015
 - ES2020
 - ES2022
 - ESNext
 - Node16
 - Node18
+- Node20
 - NodeNext
-- None
 - Preserve
-- System
-- UMD
 
 ### Available targets
 
-- ES6
 - ES2015
 - ES2016
 - ES2017
@@ -96,6 +91,7 @@ For example, to use CommonJS as the module and ES2021 as the target, set:
 - ES2022
 - ES2023
 - ES2024
+- ES2025
 - ESNext
 
 ## License

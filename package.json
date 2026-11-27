@@ -29,18 +29,18 @@
     "generate": "node ./generate.ts",
     "knip:deps": "knip --dependencies",
     "knip:exports": "knip --exports",
-    "lint": "eslint --max-warnings 0",
-    "lint:fix": "eslint --fix --max-warnings 0",
+    "lint": "eslint --cache --concurrency=auto --max-warnings 0",
+    "lint:fix": "eslint --cache --concurrency=auto --fix --max-warnings 0",
     "release": "pnpm run lint && pnpm run typecheck && pnpm run generate && changelogen --hideAuthorEmail --push --release && bash ./generate-and-publish.sh",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^9.1.0",
-    "@kikiutils/eslint-config": "^9.2.0",
-    "@types/node": "^26.1.0",
+    "@antfu/eslint-config": "^10.0.0",
+    "@kikiutils/eslint-config": "^11.4.0",
+    "@types/node": "^26.6.11",
     "changelogen": "^0.6.2",
-    "eslint": "^10.6.0",
-    "knip": "^6.25.0",
+    "eslint": "^10.15.0",
+    "knip": "^6.48.0",
     "typescript": "^6.0.3"
   }
 }

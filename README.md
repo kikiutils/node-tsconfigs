@@ -15,6 +15,10 @@ Preconfigured TypeScript config files for stricter type checking and multi-envir
 - 🔀 Multiple `tsconfig` variants to support different `module` and `target` settings
 - 🍞 Includes official Bun settings for seamless integration
 
+## Requirements
+
+- **Node.js** `>=24.15.0`
+
 ## Installation
 
 Using [pnpm](https://pnpm.io):
